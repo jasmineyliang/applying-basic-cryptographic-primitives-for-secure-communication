@@ -1,5 +1,3 @@
-package hw3;
-
 import java.security.spec.X509EncodedKeySpec;
 import java.util.Scanner;
 import java.io.*;
