@@ -1,5 +1,3 @@
-package hw3;
-
 import javax.crypto.BadPaddingException;
 import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
@@ -91,7 +89,7 @@ public class Client {
 					System.out.println("match");
 					// It converts the string received from its user to a byte array.
 					byte[] byteText = text.getBytes("UTF-8");
-					// It generates a signature of the byte array, using ìSHA512withRSAî.
+					// It generates a signature of the byte array, using ‚ÄúSHA512withRSA‚Äù.
 					byte[] signatureText = signSHA256RSA(byteText, clientPrivateKeyF);
 					// It encrypts the byte array with the shared AES key and CBC mode, to get
 					// cipher-text.
