@@ -160,7 +160,7 @@ public class Client {
 	// Method for verify signature with public key
 	public static boolean verify(byte[] key, byte[] signature)
 			throws NoSuchAlgorithmException, InvalidKeySpecException, InvalidKeyException, SignatureException {
-		KeyFactory kf = KeyFactory.getInstance("AES/CBC"); // or "EC" or whatever
+		KeyFactory kf = KeyFactory.getInstance("RSA");
 		PublicKey publicKey = kf.generatePublic(new X509EncodedKeySpec(key));
 		Signature sig = Signature.getInstance("SHA256withRSA");
 		sig.initVerify(publicKey);
